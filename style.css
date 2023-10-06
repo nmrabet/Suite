@@ -8,10 +8,14 @@
   --tercary: #ffa84e;
 }
 
+html {
+  box-sizing: border-box;
+}
+
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 body {
@@ -25,6 +29,15 @@ header {
   justify-content: space-between;
   align-items: center;
   margin: 2em 1em;
+}
+
+.title {
+  font-size: 46px;
+  font-weight: 400;
+}
+
+.solution::before {
+  content: url("./assets/pattern-curved-line-1.svg");
 }
 
 .btn {
@@ -68,6 +81,7 @@ header {
 
 .container p {
   line-height: 1.65;
+  font-size: 21px;
 }
 
 .hero-img {
@@ -98,43 +112,49 @@ section {
   background-color: var(--black);
   color: var(--whitish);
   text-align: center;
-  margin: 14em 1em 4em 1em;
+  margin: 14em 0 4em 0;
   padding-bottom: 2rem;
   border-radius: 10px;
   z-index: 1;
 }
 
 .wrapper__block {
-    margin: 2em
+  margin: 2em;
 }
 
 .wrapper__block h2 {
-    font-size: 42px;
-    font-weight: 400;
+  font-size: 42px;
+  font-weight: 400;
 }
 
 .wrapper__block h3 {
-    font-size: 25px;
-    text-transform: uppercase;
+  font-size: 25px;
+  text-transform: uppercase;
 }
 .wrapper__block h4 {
-    font-size: 20px;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 3px;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
-.works {
-    font-weight: bold;
+.bold {
+  font-weight: bold;
 }
 
 .wrapper__block p {
-    line-height: 1.85;
-    margin-bottom: 3rem;
+  line-height: 1.85;
+  margin-bottom: 3rem;
 }
 
 .jeremy {
-    margin-top: -170px;
+  margin-top: -170px;
+}
+
+.wrapper__block h2::before {
+  content: url(./assets/pattern-curved-line-2.svg);
+  display: block;
+  margin: 1em 0;
 }
 
 footer {
@@ -150,4 +170,3 @@ footer > * {
 .social-media > * {
   margin-left: 1rem;
 }
-

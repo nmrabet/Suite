@@ -21,40 +21,66 @@
   </head>
   <body>
     <header>
-      <img src="./assets/logo.svg" alt=""   />
+      <img src="./assets/logo.svg" alt="" />
       <button class="btn empty">Request Beta Access</button>
     </header>
-
-    <div class="hero">
-      <div class="container">
-        <h1 class="title">A super solution for your business.</h1>
-        <p>
-          Our marketing and sales automations help you scale your outreach to
-          get more leads for your company.
-        </p>
-        <button class="btn full">Request Beta Access</button>
+    <main>
+      <div class="hero">
+        <div class="container">
+          <h1 class="title">
+            A <span class="bold">super solution</span> for your
+            <span class="bold">business</span>.
+          </h1>
+          <p>
+            Our marketing and sales automations help you scale your outreach to
+            get more leads for your company.
+          </p>
+          <button class="btn full">Request Beta Access</button>
+        </div>
+        <picture>
+          <source
+            media="(min-width: 550px)"
+            srcset="./assets/image-hero-portrait.webp"
+          />
+          <source
+            media="(min-width: 850px)"
+            srcset="./assets/image-hero-portrait@2x.webp"
+          />
+          <img
+            src="./assets/image-hero-landscape.png"
+            alt=""
+            class="hero-img"
+          />
+        </picture>
+        <div class="stats-container">
+          <div class="stats">
+            <span>2K+</span>
+            <p>Companies</p>
+          </div>
+          <div class="stats">
+            <span>8</span>
+            <p>Languages</p>
+          </div>
+          <div class="stats">
+            <span>1.2M</span>
+            <p>Leads</p>
+          </div>
+        </div>
       </div>
-      <img src="./assets/image-hero-landscape.png" alt="" class="hero-img">
-      <div class="stats-container">
-        <div class="stats">
-          <span>2K+</span>
-          <p>Companies</p>
-        </div>
-        <div class="stats">
-          <span>8</span>
-          <p>Languages</p>
-        </div>
-        <div class="stats">
-          <span>1.2M</span>
-          <p>Leads</p>
-        </div>
-      </div>
-    </div>
-
       <section>
-        <img src="./assets/image-jeremy-small.webp" alt="" class="jeremy">
+        <picture>
+          <source
+            media="(min-width:550px )"
+            srcset="./assets/image-jeremy-large.webp"
+          />
+          <source
+            media="(min-width: 850px)"
+            srcset="./assets/image-jeremy-large@2x.webp"
+          />
+          <img src="./assets/image-jeremy-small.png" alt="" class="jeremy" />
+        </picture>
         <div class="wrapper__block">
-          <h2>It just <span class="works">works</span>.</h2>
+          <h2>It just <span class="bold">works</span>.</h2>
           <p>
             “I really like how it is an all-in-one solution that handle many of
             the tasks that you would normally need separate tools to do the same
@@ -64,14 +90,15 @@
           <h4>CMO, Fylo</h4>
         </div>
       </section>
-      <footer>
-        <img src="./assets/logo.svg" alt="" />
-        <p>Copyright - Suite</p>
-        <div class="social-media">
-          <img src="./assets/icon-facebook.svg" alt="" />
-          <img src="./assets/icon-twitter.svg" alt="" />
-          <img src="./assets/icon-instagram.svg" alt="" />
-        </div>
-      </footer>
+    </main>
+    <footer>
+      <img src="./assets/logo.svg" alt="" />
+      <p>Copyright - Suite</p>
+      <div class="social-media">
+        <img src="./assets/icon-facebook.svg" alt="" />
+        <img src="./assets/icon-twitter.svg" alt="" />
+        <img src="./assets/icon-instagram.svg" alt="" />
+      </div>
+    </footer>
   </body>
 </html>
