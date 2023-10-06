@@ -1,0 +1,153 @@
+:root {
+  --black: #172339;
+  --gray: #49566d;
+  --whitish: #f3ede7;
+  --white: #faf8f6;
+  --primary: #a060ff;
+  --secondary: #cb30e3;
+  --tercary: #ffa84e;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Epilogue", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2em 1em;
+}
+
+.btn {
+  background-color: transparent;
+  padding: 1em 2em;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.empty:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.full {
+  background-color: var(--black);
+  color: var(--white);
+  font-size: 18px;
+  border: none;
+}
+
+.full:hover {
+  background-color: none;
+  background: rgb(160, 96, 255);
+  background: linear-gradient(
+    138deg,
+    rgba(160, 96, 255, 1) 0%,
+    rgba(203, 48, 227, 1) 50%,
+    rgba(255, 168, 78, 1) 100%
+  );
+}
+
+.hero {
+  margin: 2em 1em;
+}
+
+.container {
+  margin: 4em 0;
+}
+
+.container p {
+  line-height: 1.65;
+}
+
+.hero-img {
+  display: block;
+  margin: 3em auto;
+  width: 100%;
+}
+
+.stats-container {
+  text-align: center;
+}
+
+.stats span {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.stats {
+  margin-bottom: 2rem;
+}
+
+.stats p {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+section {
+  background-color: var(--black);
+  color: var(--whitish);
+  text-align: center;
+  margin: 14em 1em 4em 1em;
+  padding-bottom: 2rem;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.wrapper__block {
+    margin: 2em
+}
+
+.wrapper__block h2 {
+    font-size: 42px;
+    font-weight: 400;
+}
+
+.wrapper__block h3 {
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.wrapper__block h4 {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.works {
+    font-weight: bold;
+}
+
+.wrapper__block p {
+    line-height: 1.85;
+    margin-bottom: 3rem;
+}
+
+.jeremy {
+    margin-top: -170px;
+}
+
+footer {
+  text-align: center;
+  background-color: var(--whitish);
+  padding: 2em 0;
+}
+
+footer > * {
+  margin-bottom: 2rem;
+}
+
+.social-media > * {
+  margin-left: 1rem;
+}
+
