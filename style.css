@@ -82,6 +82,7 @@ header {
 .container p {
   line-height: 1.65;
   font-size: 21px;
+  margin: 1.5em 0;
 }
 
 .hero-img {
@@ -112,14 +113,14 @@ section {
   background-color: var(--black);
   color: var(--whitish);
   text-align: center;
-  margin: 14em 0 4em 0;
+  margin-top: 14em;
   padding-bottom: 2rem;
   border-radius: 10px;
   z-index: 1;
 }
 
 .wrapper__block {
-  margin: 2em;
+  margin-top: 2em;
 }
 
 .wrapper__block h2 {
@@ -131,6 +132,7 @@ section {
   font-size: 25px;
   text-transform: uppercase;
 }
+
 .wrapper__block h4 {
   font-size: 20px;
   font-weight: 400;
@@ -147,10 +149,6 @@ section {
   margin-bottom: 3rem;
 }
 
-.jeremy {
-  margin-top: -170px;
-}
-
 .wrapper__block h2::before {
   content: url(./assets/pattern-curved-line-2.svg);
   display: block;
@@ -165,8 +163,58 @@ footer {
 
 footer > * {
   margin-bottom: 2rem;
+  cursor: pointer;
 }
 
 .social-media > * {
   margin-left: 1rem;
+}
+
+@media screen and (min-width: 550px) {
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .stats-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .article {
+    margin: 0 1em;
+  }
+
+  .footer-container {
+    margin: 0 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .intro,
+  header,
+  .footer-container {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  .intro {
+    display: flex;
+    align-items: center;
+  }
+  .stats-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 400px;
+  }
+  .article {
+    max-width: 1200px;
+    margin: 5em auto 0 auto;
+    display: flex;
+  }
 }

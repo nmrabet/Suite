@@ -25,33 +25,35 @@
       <button class="btn empty">Request Beta Access</button>
     </header>
     <main>
-      <div class="hero">
-        <div class="container">
-          <h1 class="title">
-            A <span class="bold">super solution</span> for your
-            <span class="bold">business</span>.
-          </h1>
-          <p>
-            Our marketing and sales automations help you scale your outreach to
-            get more leads for your company.
-          </p>
-          <button class="btn full">Request Beta Access</button>
+      <div class="intro">
+        <div class="hero">
+          <div class="container">
+            <h1 class="title">
+              A <span class="bold">super solution</span> for your
+              <span class="bold">business</span>.
+            </h1>
+            <p>
+              Our marketing and sales automations help you scale your outreach
+              to get more leads for your company.
+            </p>
+            <button class="btn full">Request Beta Access</button>
+          </div>
+          <picture>
+            <source
+              media="(min-width: 550px)"
+              srcset="./assets/image-hero-portrait.webp"
+            />
+            <source
+              media="(min-width: 850px)"
+              srcset="./assets/image-hero-portrait@2x.webp"
+            />
+            <img
+              src="./assets/image-hero-landscape.png"
+              alt=""
+              class="hero-img"
+            />
+          </picture>
         </div>
-        <picture>
-          <source
-            media="(min-width: 550px)"
-            srcset="./assets/image-hero-portrait.webp"
-          />
-          <source
-            media="(min-width: 850px)"
-            srcset="./assets/image-hero-portrait@2x.webp"
-          />
-          <img
-            src="./assets/image-hero-landscape.png"
-            alt=""
-            class="hero-img"
-          />
-        </picture>
         <div class="stats-container">
           <div class="stats">
             <span>2K+</span>
@@ -67,7 +69,7 @@
           </div>
         </div>
       </div>
-      <section>
+      <section class="article">
         <picture>
           <source
             media="(min-width:550px )"
@@ -92,12 +94,14 @@
       </section>
     </main>
     <footer>
-      <img src="./assets/logo.svg" alt="" />
-      <p>Copyright - Suite</p>
-      <div class="social-media">
-        <img src="./assets/icon-facebook.svg" alt="" />
-        <img src="./assets/icon-twitter.svg" alt="" />
-        <img src="./assets/icon-instagram.svg" alt="" />
+      <div class="footer-container">
+        <img src="./assets/logo.svg" alt="" />
+        <p>Copyright - Suite</p>
+        <div class="social-media">
+          <img src="./assets/icon-facebook.svg" alt="" />
+          <img src="./assets/icon-twitter.svg" alt="" />
+          <img src="./assets/icon-instagram.svg" alt="" />
+        </div>
       </div>
     </footer>
   </body>
