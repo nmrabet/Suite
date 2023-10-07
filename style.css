@@ -175,7 +175,9 @@ footer > * {
     display: flex;
     align-items: center;
     justify-content: space-between;
+   
   }
+
   .stats-container {
     display: flex;
     align-items: center;
@@ -196,12 +198,17 @@ footer > * {
 }
 
 @media screen and (min-width: 850px) {
-  .intro,
   header,
+  .intro,
   .footer-container {
-    margin: 0 auto;
+    margin-inline: auto;
     max-width: 1200px;
   }
+  
+  .hero {
+    margin: 2em 0;
+  }
+
   .intro {
     display: flex;
     align-items: center;
